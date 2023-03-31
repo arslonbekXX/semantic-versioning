@@ -62,30 +62,50 @@
 			[
 				"@semantic-release/release-notes-generator",
 				{
-						"parserOpts": {
-								"noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
-						},
-						"preset": "conventionalcommits",
-						"presetConfig": {
-								"types": [
-										{
-												"type": "breaking",
-												"section": "❗ Breaking ❗",
-												"hidden": false
-										},
-										{ "type": "feat", "section": "✨ Feature ✨", "hidden": false },
-										{ "type": "fix", "section": "🐛 Bugfix 🐛", "hidden": false },
-										{ "type": "hotfix", "section": "🔥 Hotfix 🔥", "hidden": false },
-										{
-												"type": "BREAKING",
-												"section": "❗ Breaking ❗",
-												"hidden": false
-										},
-										{ "type": "HOTFIX", "section": "🔥 Hotfix 🔥", "hidden": false }
-								]
-						}
+					"parserOpts": {
+						"noteKeywords": [
+							"BREAKING CHANGE",
+							"BREAKING CHANGES",
+							"BREAKING"
+						]
+					},
+					"preset": "angular",
+					"presetConfig": {
+						"types": [
+							{
+								"type": "breaking",
+								"section": "❗ Breaking ❗",
+								"hidden": false
+							},
+							{
+								"type": "feat",
+								"section": "✨ Feature ✨",
+								"hidden": false
+							},
+							{
+								"type": "fix",
+								"section": "🐛 Bugfix 🐛",
+								"hidden": false
+							},
+							{
+								"type": "hotfix",
+								"section": "🔥 Hotfix 🔥",
+								"hidden": false
+							},
+							{
+								"type": "BREAKING",
+								"section": "❗ Breaking ❗",
+								"hidden": false
+							},
+							{
+								"type": "HOTFIX",
+								"section": "🔥 Hotfix 🔥",
+								"hidden": false
+							}
+						]
+					}
 				}
-		],
+			],
 			"@semantic-release/npm",
 			"@semantic-release/git"
 		]
